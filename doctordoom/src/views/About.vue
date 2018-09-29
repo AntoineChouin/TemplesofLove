@@ -6,18 +6,15 @@
 
 
 <style lang="scss">
-
-
-$navBorder: 5px solid blue;
-nav{
-  border: navBorder;
-}
-.about{
-  color: rosybrown;
-
-  h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  $navBorder: 5px solid blue;
+  nav {
+    border: navBorder;
   }
+  
+  .about {
+    color: rosybrown;
+    h1 {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
   }
 </style>
-
