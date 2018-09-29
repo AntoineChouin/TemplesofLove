@@ -13,25 +13,20 @@
         <div class="clash-card__unit-description">
           The Barbarian is a kilt-clad Scottish warrior with an angry, battle-ready expression, hungry for destruction. He has Killer yellow horseshoe mustache.
         </div>
-  
         <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
           <div class="one-third">
             <div class="stat">20<sup>S</sup></div>
             <div class="stat-value">Training</div>
           </div>
-  
           <div class="one-third">
             <div class="stat">16</div>
             <div class="stat-value">Speed</div>
           </div>
-  
           <div class="one-third no-border">
             <div class="stat">150</div>
             <div class="stat-value">Cost</div>
           </div>
-  
         </div>
-  
       </div>
       <!-- end clash-card barbarian-->
     </div>
@@ -46,25 +41,20 @@
         <div class="clash-card__unit-description">
           The Archer is a female warrior with sharp eyes. She wears a short, light green dress, a hooded cape, a leather belt and an attached small pouch.
         </div>
-  
         <div class="clash-card__unit-stats clash-card__unit-stats--archer clearfix">
           <div class="one-third">
             <div class="stat">25<sup>S</sup></div>
             <div class="stat-value">Training</div>
           </div>
-  
           <div class="one-third">
             <div class="stat">24</div>
             <div class="stat-value">Speed</div>
           </div>
-  
           <div class="one-third no-border">
             <div class="stat">300</div>
             <div class="stat-value">Cost</div>
           </div>
-  
         </div>
-  
       </div>
       <!-- end clash-card archer-->
     </div>
@@ -79,25 +69,20 @@
         <div class="clash-card__unit-description">
           Slow, steady and powerful, Giants are massive warriors that soak up huge amounts of damage. Show them a turret or cannon and you'll see their fury unleashed!
         </div>
-  
         <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
           <div class="one-third">
             <div class="stat">2<sup>M</sup></div>
             <div class="stat-value">Training</div>
           </div>
-  
           <div class="one-third">
             <div class="stat">12</div>
             <div class="stat-value">Speed</div>
           </div>
-  
           <div class="one-third no-border">
             <div class="stat">2250</div>
             <div class="stat-value">Cost</div>
           </div>
-  
         </div>
-  
       </div>
       <!-- end clash-card giant-->
     </div>
@@ -106,7 +91,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import url(https://fonts.googleapis.com/css?family=Lato:400, 700, 900);
+@import url('https://fonts.googleapis.com/css?family=Lato:400, 700, 900');
 $border-radius-size: 14px;
 $barbarian: #ec9b3b;
 $archer: #ee5487;
@@ -134,13 +119,14 @@ body {
   color: #9e9e9e;
   margin-top: 30px;
 }
-#nav {
+nav#nav {
   z-index: 9999;
 }
 
 .slide-container {
   margin: auto;
-  width: 600px;
+  width: 1200px;
+  display: flex;
   text-align: center;
 }
 
@@ -161,7 +147,7 @@ body {
   position: relative;
   text-align: center;
   box-shadow: -1px 15px 30px -12px black;
-  z-index: 9999;
+  z-index: 8888;
 }
 
 .clash-card__image {
@@ -337,6 +323,3 @@ body {
   z-index: 999;
 }
 </style>
-
-
-

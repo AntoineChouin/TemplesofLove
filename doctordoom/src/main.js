@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import holderJs from 'holderjs'
+import holderjs from 'holderjs'
 
 Vue.config.productionTip = false
 
