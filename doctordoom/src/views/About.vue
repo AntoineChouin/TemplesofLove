@@ -6,8 +6,10 @@
 
 
 <style lang="scss">
+$blue: #aaaa33;
   $navBorder: 5px solid blue;
   nav {
+    background-color:$blue;
     border: navBorder;
   }
   
