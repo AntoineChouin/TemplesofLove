@@ -17,15 +17,32 @@ export default {
     HelloWorld,
     PostAside
   }
-  // name: 'aside',
-  // components: {
-  //   PostAside
-  // }
+
 }
-// export default {
-//   name: 'home',
-//   components: {
-//     PostAside
-//   }
-// }
+
 </script>
+<style scoped>
+.home {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  align-items: center;
+  background-color: yellowgreen;
+}
+img{
+  max-width: 50%;
+  max-height: 50%;
+}
+.home * {
+  background-color: navajowhite;
+  border: 1px solid violet;
+  flex: 0 0  auto;
+  /* display: none; */
+}
+
+.home .hello:first-child{
+  align-self: flex-end;
+  color: royalblue;
+}
+</style>
+

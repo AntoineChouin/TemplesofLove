@@ -105,8 +105,9 @@
   *:after {
     box-sizing: border-box;
   }
-  
   body {
+    max-width: 100%;
+    max-height: 100%;
     background: linear-gradient( to bottom, rgba(140, 122, 122, 1) 0%, rgba(175, 135, 124, 1) 65%, rgba(175, 135, 124, 1) 100%) fixed;
     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/coc-background.jpg") no-repeat center center fixed;
     background-size: cover;
@@ -114,26 +115,45 @@
     color: #9e9e9e;
     margin-top: 30px;
   }
-  
   nav#nav {
     z-index: 9999;
   }
-  
   #about {
-    width: 1200px;
-    
+    max-width: 100vw;
+    width: 100%;
+    background-color: #aaa;
     section.container{
       display: flex;
     justify-content: space-evenly;
     }
   }
-  
   .slide-container {
     margin: auto;
     flex: 1 1 100%;
     text-align: center;
   }
-  
+
+  @media screen and (max-width: 600px)
+{
+#about {
+    max-width: 100vw;;
+    background-color: #af3;
+    section.container{
+      display: flex;
+      flex-flow: wrap column;
+    justify-content: space-evenly;
+    }
+  }
+  .slide-container {
+    margin: auto;
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .clash-card {
+    width: 100%;
+  }
+}
   .wrapper {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -141,7 +161,6 @@
       outline: 0;
     }
   }
-  
   .clash-card {
     background: white;
     width: 300px;
@@ -153,7 +172,6 @@
     box-shadow: -1px 15px 30px -12px black;
     z-index: 8888;
   }
-  
   .clash-card__image {
     position: relative;
     height: 230px;
@@ -161,7 +179,6 @@
     border-top-left-radius: $border-radius-size;
     border-top-right-radius: $border-radius-size;
   }
-  
   .clash-card__image--barbarian {
     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg");
     img {
@@ -171,7 +188,6 @@
       left: -70px;
     }
   }
-  
   .clash-card__image--archer {
     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg");
     img {
@@ -181,7 +197,6 @@
       left: -37px;
     }
   }
-  
   .clash-card__image--giant {
     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg");
     img {
@@ -191,7 +206,6 @@
       left: -25px;
     }
   }
-  
   .clash-card__image--goblin {
     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg");
     img {
@@ -201,7 +215,6 @@
       left: -37px;
     }
   }
-  
   .clash-card__image--wizard {
     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard-bg.jpg");
     img {
@@ -211,81 +224,67 @@
       left: -10px;
     }
   }
-  
   .clash-card__level {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 700;
     margin-bottom: 3px;
   }
-  
   .clash-card__level--barbarian {
     color: $barbarian;
   }
-  
   .clash-card__level--archer {
     color: $archer;
   }
-  
   .clash-card__level--giant {
     color: $giant;
   }
-  
   .clash-card__level--goblin {
     color: $goblin;
   }
-  
   .clash-card__level--wizard {
     color: $wizard;
   }
-  
   .clash-card__unit-name {
     font-size: 26px;
     color: black;
     font-weight: 900;
     margin-bottom: 5px;
   }
-  
   .clash-card__unit-description {
     padding: 20px;
     margin-bottom: 10px;
   }
-  
   .clash-card__unit-stats--barbarian {
     background: $barbarian;
     .one-third {
       border-right: 1px solid #bd7c2f;
     }
   }
-  
   .clash-card__unit-stats--archer {
     background: $archer;
     .one-third {
       border-right: 1px solid #d04976;
     }
   }
-  
   .clash-card__unit-stats--giant {
     background: $giant;
     .one-third {
       border-right: 1px solid darken($giant, 8%);
     }
   }
-  
   .clash-card__unit-stats--goblin {
     background: $goblin;
     .one-third {
       border-right: 1px solid darken($goblin, 6%);
     }
   }
-  
   .clash-card__unit-stats--wizard {
     background: $wizard;
     .one-third {
       border-right: 1px solid darken($wizard, 6%);
     }
   }
-  
   .clash-card__unit-stats {
     color: white;
     font-weight: 700;
@@ -316,7 +315,6 @@
       border-right: none;
     }
   }
-  
   .clearfix:after {
     visibility: hidden;
     display: block;
@@ -325,12 +323,10 @@
     clear: both;
     height: 0;
   }
-  
   .slick-prev {
     left: 100px;
     z-index: 999;
   }
-  
   .slick-next {
     right: 100px;
     z-index: 999;
