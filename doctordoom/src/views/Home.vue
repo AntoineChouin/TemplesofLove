@@ -1,17 +1,7 @@
-<template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <PostAside msg="Welcome to the Vue of your wetUssy.js App"/>
-    <img data-src="holder.js/100px75?theme=social">
-  </div>
-</template>
-
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
 import PostAside from '@/components/PostAside.vue'
-import holder from 'holderjs'
 
 export default {
   name: 'home',
@@ -23,6 +13,16 @@ export default {
 }
 
 </script>
+
+<template>
+  <div class="home">
+    <img alt="Vue logo" src="../assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <PostAside msg="Welcome to the Vue of your wetUssy.js App"/>
+    <!-- <img data-src="holder.js/100px75?theme=social"> -->
+  </div>
+</template>
+
 <style scoped>
 .home {
   display: flex;
