@@ -28,4 +28,5 @@
         </div>
         <!-- end clash-card barbarian-->
     </div>
+    <!-- end wrapper -->
 </template>
