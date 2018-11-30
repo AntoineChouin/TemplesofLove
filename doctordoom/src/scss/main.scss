@@ -1,0 +1,60 @@
+@import "base";
+@import "about";
+@import url('https://fonts.googleapis.com/css?family=Lato:400, 700, 900');
+/* //<!-- Fin - App.vue--> */
+/* //<!-- HelloWorld.vue--> */
+
+
+/* //<!-- Fin - HelloWorld.vue--> */
+
+
+/* font About.Vue */
+
+#about nav {
+    background-color: #aaaa33;
+    border: 5px solid blue;
+}
+
+.about {
+    color: rosybrown;
+}
+
+.about h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.holderJs {
+    border-radius: 55px;
+    position: relative;
+
+    // background-color: yellow;
+    img {
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+}
+
+.home {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellowgreen;
+
+    .hello {
+        background-color: navajowhite;
+        /* border: 1px solid violet; */
+        flex: 1 1 (100% * (3/4));
+        /* display: none; */
+
+        &:first-child {
+            align-self: flex-end;
+            color: royalblue;
+    }
+}
+}
+
+.card{
+    border: 1px solid blue;
+}

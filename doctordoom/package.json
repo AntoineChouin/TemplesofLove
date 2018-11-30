@@ -1,0 +1,49 @@
+{
+  "name": "doctordoom",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "vue": "^2.5.17",
+    "vue-holderjs": "^1.0.2",
+    "vue-router": "^3.0.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.2.0",
+    "@vue/cli-plugin-eslint": "^3.2.1",
+    "@vue/cli-service": "^3.2.0",
+    "@vue/eslint-config-standard": "^3.0.5",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
