@@ -7,6 +7,9 @@
         <div class="wrapper">
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, sint.</h3>
         </div>
+        <div id="travail">
+            {{ text }} Nice to meet Vue.
+        </div>
         <!-- <PostAside msg="Welcome to the Vue of your wetUssy.js App" /> -->
     </div>
 </template>
@@ -16,9 +19,17 @@
 </style>
 
 <script>
-    var afe = console.log("Am I in this because of you?");
-    export default{
-        afe
-    }
+    Vue.config.devtools = true;
+    
+    new Vue({
+        el: '#travail',
+        data: {
+            items: [
+                'thingie',
+                'another thingie',
+                'lots of stuff',
+                'yadda yadda'
+            ]
+        }
+    })
 </script>
-
