@@ -18,7 +18,7 @@ export default {
   <div class="home">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <div class="hello">
-      <img v-holder="'img=200x200?auto=yes'">
+      <img v-holder="'img=200x200?auto=yes&random=yes'">
     </div>
     <PostAside msg="Welcome to the Vue of your wetUssy.js App"/>
   </div>

@@ -1,60 +1,144 @@
 @import "base";
+@import "nav/_nav";
 @import "about";
 @import url('https://fonts.googleapis.com/css?family=Lato:400, 700, 900');
 /* //<!-- Fin - App.vue--> */
-/* //<!-- HelloWorld.vue--> */
 
+/* //<!-- HelloWorld.vue--> */
 
 /* //<!-- Fin - HelloWorld.vue--> */
 
-
 /* font About.Vue */
 
-#about nav {
-    background-color: #aaaa33;
-    border: 5px solid blue;
-}
+@mixin clearflex() {
 
-.about {
-    color: rosybrown;
-}
-
-.about h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-.holderJs {
-    border-radius: 55px;
-    position: relative;
-
-    // background-color: yellow;
-    img {
-        max-width: 100vw;
-        max-height: 100vh;
+    &:before,
+    &:after {
+        content: "";
+        flex-basis: 0;
+        order: 1;
     }
 }
 
-.home {
+$color: pink,
+gold,
+#ff7faa,
+green,
+blue,
+purple;
+$clrs: #89cd66,
+#66cdaa,
+#aa66cd,
+#cd6689,
+#cd7766,
+#cd66bd;
+$barbarian: #EC9B3B;
+$paladin: #9b3bec;
+$monk: #ec3b8c;
+$archer: #EE5487;
+$giant: #F6901A;
+$goblin: #82BB30;
+$wizard: #4FACFF;
+$clashColor: $barbarian,
+$archer,
+$giant,
+$wizard,
+$goblin,
+$monk,
+$paladin;
+
+@mixin bckg($choix) {
+
+    // $back: $clrs;
+    @for $i from 1 through length($choix) {
+        &:nth-child(#{length($choix)}n+#{$i}) {
+            background: lighten(nth($choix, $i), 20%);
+            border: 4px solid darken(nth($choix, $i), 15%);
+        }
+    }
+}
+
+// #about .container {
+//     // max-width: 1200px;
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+//     flex-flow: row wrap;
+//     section {
+//         @include clearflex();
+//     }
+// }
+
+$border-radius-size: 14px;
+
+body {
+    background: linear-gradient(to bottom, rgba(140, 122, 122, 1) 0%, rgba(175, 135, 124, 1) 65%, rgba(175, 135, 124, 1) 100%) fixed;
+    // background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/coc-background.jpg') no-repeat center center fixed;
+    // background-size: cover;
+    font: 14px/20px "Lato", Arial, sans-serif;
+    color: #9E9E9E;
+    margin-top: 30px;
+    padding-top: 1.5rem;
+}
+
+.item-a {
+    grid-area: header;
+}
+
+.item-b {
+    grid-area: main;
+}
+
+.item-c {
+    grid-area: sidebar;
+}
+
+.item-d {
+    grid-area: footer;
+}
+
+.container {
+    grid-template-columns: repeat(7, 50px);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "header header header header header header header"
+        "dimanche lundi mardi mercredi jeudi vendredi samedi";
+}
+
+.calendrier {
+    max-width: 100%;
+
+    &-endroit {
+        @extend .item-a;
+    }
+}
+
+.dimanche {
+    grid-area: dimanche;
+}
+
+.lundi {
+    grid-area: lundi;
+}
+
+.mardi {
+    grid-area: mardi;
+}
+
+.mercredi {
+    grid-area: mardi;
+}
+
+.wrapper {
+    @include bckg($clashColor);
+}
+
+.wrapper-quart {
+    // display: flex;
+    // flex-flow: wrap column;
+    border: 2px solid black;
+}
+
+.quart-heure {
     display: flex;
-    flex-flow: wrap row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: yellowgreen;
-
-    .hello {
-        background-color: navajowhite;
-        /* border: 1px solid violet; */
-        flex: 1 1 (100% * (3/4));
-        /* display: none; */
-
-        &:first-child {
-            align-self: flex-end;
-            color: royalblue;
-    }
-}
-}
-
-.card{
-    border: 1px solid blue;
 }

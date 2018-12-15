@@ -1,22 +1,6 @@
 /* eslint-disable */
 <template id="calender">
-    <div class="container calendrier">
-        <header>
-            <h3>Lorem di fuck</h3>
-        </header>
-        <section class="wrapper">
-            <header class="wrapper-card card">
-                <h3>Dimanche</h3>
-                <time datetime="2018-07-07">July 7</time>
-            </header>
-        </section>
-        <section class="wrapper">
-            <header class="wrapper-card card">
-                <h3>Lundi</h3>
-                <time datetime="2018-07-07">July 7</time>
-            </header>
-        </section>
-    </div>
+    <h1>This is breaking a lot</h1>
 </template>
 <style lang="scss" scoped>
 #calender{
