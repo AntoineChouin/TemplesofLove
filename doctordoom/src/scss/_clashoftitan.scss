@@ -1,3 +1,13 @@
+
+$barbarian: #EC9B3B;
+$paladin: #9b3bec;
+$monk: #ec3b8c;
+$archer: #EE5487;
+$giant: #F6901A;
+$goblin: #82BB30;
+$wizard: #4FACFF;
+$border-radius-size: 5px;
+
 .clash-card {
     background: white;
     width: 300px;
@@ -55,10 +65,12 @@
     background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg');
 
     img {
-        width: 370px;
-        position: absolute;
-        top: -21px;
-        left: -37px;
+        max-width: 50%;
+
+        // width: 370px;
+        // position: absolute;
+        // top: -21px;
+        // left: -37px;
     }
 }
 
@@ -82,6 +94,10 @@
 
 .clash-card__level--barbarian {
     color: $barbarian;
+}
+
+.clash-card__level--goblin {
+    color: $paladin;
 }
 
 .clash-card__level--archer {
@@ -113,6 +129,14 @@
 }
 
 .clash-card__unit-stats--barbarian {
+    background: $barbarian;
+
+    .one-third {
+        border-right: 1px solid #BD7C2F;
+    }
+}
+
+.clash-card__unit-stats--goblin {
     background: $barbarian;
 
     .one-third {

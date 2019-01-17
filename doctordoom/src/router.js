@@ -27,7 +27,7 @@ export default new Router({
     },
     {
       path: '/superheroes',
-      name: 'superheroes',
+      name: 'Superheroes',
       /* webpackChunkName: "about" */
       component: () => import('./views/Superheroes.vue')
     }

@@ -487,9 +487,10 @@ body {
   margin-top: 30px;
   padding-top: 24px;
   padding-top: 1.5rem;
+  max-width: 100%;
 }
 
-.item-a, .calendrier-endroit {
+.item-a, .container-endroit {
   grid-area: header;
 }
 
@@ -505,13 +506,13 @@ body {
   grid-area: footer;
 }
 
-.container {
+.calendrier {
   grid-template-columns: repeat(7, 50px);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "header header header header header header header" "dimanche lundi mardi mercredi jeudi vendredi samedi";
 }
 
-.calendrier {
+.container {
   max-width: 100%;
 }
 
@@ -531,39 +532,10 @@ body {
   grid-area: mardi;
 }
 
-.wrapper:nth-child(7n+1) {
-  background: #f5ca98;
-  border: 4px solid #c77513;
-}
-
-.wrapper:nth-child(7n+2) {
-  background: #f7b1c8;
-  border: 4px solid #df1659;
-}
-
-.wrapper:nth-child(7n+3) {
-  background: #fac07c;
-  border: 4px solid #bc6807;
-}
-
-.wrapper:nth-child(7n+4) {
-  background: #b5dcff;
-  border: 4px solid #0388ff;
-}
-
-.wrapper:nth-child(7n+5) {
-  background: #b2dc75;
-  border: 4px solid #587e20;
-}
-
-.wrapper:nth-child(7n+6) {
-  background: #f598c3;
-  border: 4px solid #c71366;
-}
-
-.wrapper:nth-child(7n+7) {
-  background: #ca98f5;
-  border: 4px solid #7513c7;
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .wrapper-quart {
