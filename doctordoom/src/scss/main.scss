@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400, 700, 900');
 @import "base";
 @import "about";
-@import url('https://fonts.googleapis.com/css?family=Lato:400, 700, 900');
+
 /* //<!-- Fin - App.vue--> */
 /* //<!-- HelloWorld.vue--> */
 
@@ -16,7 +17,8 @@
 }
 
 .about {
-    color: rosybrown;
+    // color: rosybrown;
+    color: black;
 }
 
 .about h1 {

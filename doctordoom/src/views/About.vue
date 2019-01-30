@@ -18,6 +18,7 @@ export default {
   <div id="about">
     <header class="about">
       <h1>This is an about page</h1>
+      <p class="description">Cette section est librement inspiré par ceci: <a href="https://codepen.io/drehimself/pen/QNXpyp"> Codepen de Andre Madarang</a></p>
     </header>
     <section class="container clashofcards">
       <barbarian />
@@ -55,3 +56,10 @@ export default {
     </section>
   </div>
 </template>
+<style lang="scss">
+a{
+  &:hover{
+    color:lighten(adjust-hue(#42b983, 20), 10%);
+  }
+}
+</style>

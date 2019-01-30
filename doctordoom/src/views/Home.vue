@@ -20,10 +20,6 @@ export default {
     <div class="hello">
       <img v-holder="'img=200x200?auto=yes'">
     </div>
-    <PostAside msg="Welcome to the Vue of your wetUssy.js App"/>
+    <PostAside msg="Welcome to the Vue of the Mountain.js App"/>
   </div>
 </template>
-
-<style scoped>
-
-</style>

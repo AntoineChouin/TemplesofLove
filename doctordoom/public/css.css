@@ -1,5 +1,9 @@
-/* //<!-- App.vue--> */
 @import url("https://fonts.googleapis.com/css?family=Lato:400, 700, 900");
+/* //<!-- App.vue--> */
+body {
+  font-size: 100%;
+}
+
 h3 {
   margin: 40px 0 0;
 }
@@ -15,7 +19,7 @@ li {
 }
 
 a {
-  color: #42b983;
+  color: #42b4b9;
 }
 
 img {
@@ -318,7 +322,7 @@ body {
 }
 
 .about {
-  color: rosybrown;
+  color: black;
 }
 
 .about h1 {
